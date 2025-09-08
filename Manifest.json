@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "YOUR-BOT-ID",
+  "packageName": "com.mealmate.bot",
+  "developer": {
+    "name": "MealMate Dev",
+    "websiteUrl": "https://YOUR_WEBSITE_OR_NGROK_URL",
+    "privacyUrl": "https://YOUR_WEBSITE_OR_NGROK_URL/privacy",
+    "termsOfUseUrl": "https://YOUR_WEBSITE_OR_NGROK_URL/terms"
+  },
+  "name": {
+    "short": "MealMate",
+    "full": "MealMate Bot"
+  },
+  "description": {
+    "short": "A smart bot for meals.",
+    "full": "MealMate helps you plan, order, and manage meals right inside Microsoft Teams using Adaptive Cards."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#6264A7",
+  "bots": [
+    {
+      "botId": "YOUR-BOT-ID",
+      "scopes": ["personal", "team"],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "YOUR_NGROK_SUBDOMAIN.ngrok-free.app"
+  ]
+}

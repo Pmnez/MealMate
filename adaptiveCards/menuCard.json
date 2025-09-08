@@ -1,0 +1,72 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "🍽️ Today’s Menu",
+      "weight": "Bolder",
+      "size": "Medium"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Pick a meal type and an item:",
+      "wrap": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "mealType",
+      "style": "expanded",
+      "choices": [
+        {
+          "title": "Breakfast",
+          "value": "breakfast"
+        },
+        {
+          "title": "Lunch",
+          "value": "lunch"
+        },
+        {
+          "title": "Supper",
+          "value": "supper"
+        }
+      ]
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "mealItem",
+      "style": "expanded",
+      "choices": [
+        {
+          "title": "Option 1",
+          "value": "1"
+        },
+        {
+          "title": "Option 2",
+          "value": "2"
+        },
+        {
+          "title": "Option 3",
+          "value": "3"
+        },
+        {
+          "title": "Option 4",
+          "value": "4"
+        },
+        {
+          "title": "Option 5",
+          "value": "5"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Book Meal",
+      "data": {
+        "command": "book"
+      }
+    }
+  ]
+}
