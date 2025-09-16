@@ -1,4 +1,4 @@
-const { TeamsFxBot } = require("@microsoft/teamsfx");
+npm startconst { TeamsFxBot } = require("@microsoft/teamsfx");
 const menuCommand = require("./commands/menuCommand");
 const bookCommand = require("./commands/bookCommand");
 const statusCommand = require("./commands/statusCommand");
